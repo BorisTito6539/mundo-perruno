@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial;
+}
+
+/* INTRO */
+#intro {
+    height: 100vh;
+    background: linear-gradient(#cce7ff, #ffffff);
+    position: relative;
+    transition: opacity 0.8s ease;
+}
+
+#dog {
+    position: absolute;
+    bottom: 10%;
+    left: -1000px;
+    width: 950px;
+    transition: left 3.5s linear; /* ⏱️ TIEMPO CLAVE */
+}
+
+#bone {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    cursor: pointer;
+    transition: left 2.30s linear, top 1.5s linear;
+}
+
+/* MAIN */
+.hidden {
+    display: none;
+}
+
+#main {
+    text-align: center;
+    padding: 20px;
+    background: #fff5e1;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #8b4513;
+}
+
+/* GALERÍA */
+.galeria img {
+    width: 260px;
+    margin: 10px;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
