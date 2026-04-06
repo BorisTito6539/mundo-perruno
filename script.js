@@ -14,7 +14,11 @@ bone.addEventListener("click", () => {
     bark.play().catch(()=>{});
 
     // 🐕 perro corre
-    dog.style.left = "45%";
+if (window.innerWidth < 768) {
+    dog.style.left = "30%"; // celular
+} else {
+    dog.style.left = "45%"; // PC
+}
 
 setTimeout(() => {
 
